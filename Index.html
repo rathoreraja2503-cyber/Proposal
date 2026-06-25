@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proposal</title>
+
+<style>
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(45deg,#ff5f8f,#ff8a5c);
+font-family:Arial,sans-serif;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+padding:30px;
+border-radius:20px;
+text-align:center;
+color:white;
+width:320px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:30px;
+font-size:20px;
+margin:10px;
+cursor:pointer;
+}
+
+.yes{
+background:white;
+}
+
+.no{
+position:absolute;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+<h3>From: Amit ❤️</h3>
+<h1>Will you forever be mine?</h1>
+<h2>Your Name 💖</h2>
+<p>I Love You ❤️</p>
+
+<button class="yes" onclick="alert('Yay ❤️')">
+Yes ❤️
+</button>
+
+<button class="no" id="no">
+No 😈
+</button>
+</div>
+
+<script>
+const no=document.getElementById("no");
+
+no.addEventListener("mouseover",()=>{
+no.style.left=Math.random()*80+"%";
+no.style.top=Math.random()*80+"%";
+});
+</script>
+
+</body>
+</html>
